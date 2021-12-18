@@ -9813,7 +9813,7 @@ a:not([data-aos]):not(.btn):hover {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #6dadc5 !important;
+  border-bottom: 0.5px solid #6dadc5 !important;
 }
 
 .border-bottom-0 {
