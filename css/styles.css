@@ -9900,6 +9900,10 @@ a:not([data-aos]):not(.btn):hover {
   border-color: #f7fbfc !important;
 }
 
+.border-05 {
+  border-width: 0.5px !important;
+}
+
 .border-1 {
   border-width: 1px !important;
 }
