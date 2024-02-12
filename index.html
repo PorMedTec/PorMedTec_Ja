@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 	<meta charset="utf-8">
@@ -12,11 +12,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet">
 	<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
 	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/modal-video.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">
 	<!-- Custom Styles -->
 	<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
 	<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -31,7 +32,7 @@
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-		gtag('config', 'G-J40NN60MZB');
+		gtag('config', 'G-J40NN60MZB');	
 	</script>
 </head>
 
@@ -131,6 +132,23 @@
 				<div class="col-lg-6 col-md-5 col-sm-8 mb-8 mb-md-4" data-aos="fade-down" data-aos-delay="0">
 					<div class="row">
 						<div class="col-lg-4 mb-4 mb-lg-0">
+							<a href="/files/20240213release.pdf" class="d-block" target="_blank">
+								<img src="i/n12.jpg" srcset="i/n12.jpg 2x" alt="" class="img-fluid rounded-2">
+							</a>
+						</div>
+						<div class="g-0 px-xl-4 col-lg-8 pe-xl-8">
+							<p class="mb-2 font-body fw-5 text-action-7 fs-5"> 2024年2月13日 </p>
+							<a href="/files/20240213release.pdf" class="text-dark-1 mb-2 font-body fw-6 fs-4" target="_blank"> 異種臓器移植用ブタの国内生産に初めて成功 </a>
+							<p class="font-body fw-5"> ポル･メド･テック・eGenesis・明治大学 </p>
+							<p>
+								<button class="js-video-button btn btn-action-5 text-light-1 my-0 font-body fw-6 px-6 text-md-start text-center text-lg-start text-xl-start fs-5" data-video-id='jkn_4zwT4DY'> リリース動画 </button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-5 col-sm-8 mb-8 mb-md-4" data-aos="fade-down" data-aos-delay="0">
+					<div class="row">
+						<div class="col-lg-4 mb-4 mb-lg-0">
 							<a href="https://edition.cnn.com/2024/01/30/health/pig-organ-transplant-xenotransplantation/index.html" class="d-block" target="_blank">
 								<img src="i/egenesis.jpg" srcset="i/egenesis.jpg 2x" alt="" class="img-fluid rounded-2">
 							</a>
@@ -145,13 +163,13 @@
 				<div class="col-lg-6 col-md-5 col-sm-8 mb-8 mb-md-4" data-aos="fade-down" data-aos-delay="0">
 					<div class="row">
 						<div class="col-lg-4 mb-4 mb-lg-0">
-							<a href="/files/20240123 release.pdf" class="d-block" target="_blank">
+							<a href="/files/20240123release.pdf" class="d-block" target="_blank">
 								<img src="i/egenesis.jpg" srcset="i/egenesis.jpg 2x" alt="" class="img-fluid rounded-2">
 							</a>
 						</div>
 						<div class="g-0 px-xl-4 col-lg-8 pe-xl-8">
 							<p class="mb-2 font-body fw-5 text-action-7 fs-5"> 2024年1月23日 </p>
-							<a href="/files/20240123 release.pdf" class="text-dark-1 mb-2 font-body fw-6 fs-4" target="_blank"> eGenesis社とOrganOx社が脳死者への遺伝子改変ブタ肝臓の使用に成功 </a>
+							<a href="/files/20240123release.pdf" class="text-dark-1 mb-2 font-body fw-6 fs-4" target="_blank"> eGenesis社とOrganOx社が脳死者への遺伝子改変ブタ肝臓の使用に成功 </a>
 							<p class="font-body fw-5"> eGenesis </p>
 						</div>
 					</div>
@@ -977,7 +995,7 @@
 	</section>
 	<!-- Team -->
 	<section class="py-lg-20 bg-bg-3 py-16 px-4" id="team">
-		<div class="container" name="team">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
 					<h2 class="font-heading text-bg-2 mb-1 display-6" data-aos="fade-down" data-aos-delay="0"> 経営陣 </h2>
@@ -1219,6 +1237,17 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
 	<script src="js/scripts.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery-modal-video.min.js"></script>
+	<script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			},
+	  url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
+		});
+	</script>
 </body>
 
 </html>
